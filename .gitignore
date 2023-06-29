@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# dotenv environment variable file
+.env
+
+# build output
+dist
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
