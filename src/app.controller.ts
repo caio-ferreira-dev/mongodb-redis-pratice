@@ -12,14 +12,14 @@ export class AppController {
     private readonly databaseService: DatabaseService
   ) {}
 
-  @Get()
-  findAllData(): any {
-    return this.databaseService.getAllData();
-  }
-
   @Get(':id')
   findDataById(@Param() {id} : IdDTO) {
     return this.databaseService.getById(id);
+  }
+
+  @Get()
+  findAllData(): any {
+    return this.databaseService.getAllData();
   }
 
   @Post()
